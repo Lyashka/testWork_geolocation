@@ -10,6 +10,7 @@
   background-position: center;
   width: 100%;
   height: 100%;
+  z-index: 0;
 }
 .container_btns_geolocation {
   position: absolute;
@@ -31,6 +32,7 @@
   justify-content: center;
   width: 2%;
   height: 3.5%;
+  z-index: 2;
 }
 .btn1 {
   top: 28%;
@@ -83,6 +85,7 @@
   justify-content: center;
   width: 100%;
 }
+
 .style_btn_green {
   border: none;
   background-color: rgba(106, 191, 75, 1);
@@ -95,11 +98,62 @@
   height: 100%;
 }
 
+.opened_btn {
+  border-radius: 50% 0% 0% 50%;
+  opacity: 100%;
+}
+
 .hidden {
   display: none;
 }
 
 .infoHouse {
   position: absolute;
+
   left: 100%;
+  color: aliceblue;
+  min-width: 50px;
+  height: 100%;
+  font-size: 100%;
+  white-space: nowrap;
+  border-radius: 0 100px 100px 0;
+  padding: 0% 20% 0% 20%;
+
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+}
+.label_position {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img_plus {
+  width: 40%;
+}
+
+.color_label_blue {
+  background-color: rgba(56, 119, 238, 1);
+}
+.color_label_green {
+  background-color: rgba(106, 191, 75, 1);
+}
+.rectangle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(2, 15, 32, 1);
+  opacity: 40%;
+  z-index: 1;
 }
